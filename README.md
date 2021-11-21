@@ -19,8 +19,8 @@ This is an example of a scenario where a map is used with a key that is made up 
 
 - Notice the below two entries in the input having the same Product Name and Product Category.
 ```
-Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria I	Product Price: 317.87	Product Availability: false
-Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 5 Inch	Product Price: 2050.0	Product Availability: true
+Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria I	Product Price: 256.99	Product Availability: false
+Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 5 Inch	Product Price: 1075.0	Product Availability: true
 ```
 - This will be treated as a duplicate by our Map implementation.
 
