@@ -7,11 +7,11 @@ This is an example of a scenario where a map is used with a key that is made up 
 |PS4|Gaming Console| Sony Entertainment|1200.0|true
 |Dell Workstation| Laptop| Windows Laptops| 654.87| true
 |PS5| Gaming Console| Sony Entertainment| 2400.0| true
-|Samsung Galaxy| Tab| Android Tablet 5 Inch| 2050.0| true
+|Samsung Galaxy| Tab| Android Tablet 5 Inch| 1075.0| true
 |Samsung Galaxy| Tab| Android Tablet 7 Inch| 2050.0| true
 |PoloShirts| Shirts| Round collared| 10.76| true
 |Nokia Lumia| Mobiles| Windows Mobile| 108.67| false
-|Witcher| Game| Adventures of Geralt of Reveria I| 317.87| false
+|Witcher| Game| Adventures of Geralt of Reveria I| 256.99| false
 |Witcher| Game| Adventures of Geralt of Reveria II| 317.87| false
 |TurtleNecks| Shirts| Turtle collared| 10.89| true
 |Apple MacBook| Laptop| Mac Laptops| 1191.23| true
