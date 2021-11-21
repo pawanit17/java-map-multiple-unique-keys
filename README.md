@@ -8,11 +8,11 @@ This is an example of a scenario where a map is used with a key that is made up 
 	Product Name: Dell Workstation	Product Category: Laptop	Product Description: Windows Laptops	Product Price: 654.87	Product Availability: true
 	Product Name: PS5	Product Category: Gaming Console	Product Description: Sony Entertainment	Product Price: 2400.0	Product Availability: true
 	Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 5 Inch	Product Price: 2050.0	Product Availability: true
-  Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 7 Inch	Product Price: 2050.0	Product Availability: true
-	Product Name: PoloShirts	Product Category: Shirts	Product Description: Round collared	Product Price: 10.76	Product Availability: true
-	Product Name: Nokia Lumia	Product Category: Mobiles	Product Description: Windows Mobile	Product Price: 108.67	Product Availability: false
-  Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria I	Product Price: 317.87	Product Availability: false
-  Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria II	Product Price: 317.87	Product Availability: false
+        Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 7 Inch	Product Price: 2050.0	Product Availability: true
+        Product Name: PoloShirts	Product Category: Shirts	Product Description: Round collared	Product Price: 10.76	Product Availability: true
+        Product Name: Nokia Lumia	Product Category: Mobiles	Product Description: Windows Mobile	Product Price: 108.67	Product Availability: false
+        Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria I	Product Price: 317.87	Product Availability: false
+        Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria II	Product Price: 317.87	Product Availability: false
 	Product Name: TurtleNecks	Product Category: Shirts	Product Description: Turtle collared	Product Price: 10.89	Product Availability: true
 	Product Name: Apple MacBook	Product Category: Laptop	Product Description: Mac Laptops	Product Price: 1191.23	Product Availability: true
 	Product Name: Samsung Galaxy	Product Category: Mobiles	Product Description: Android Mobile	Product Price: 201.98	Product Availability: true
