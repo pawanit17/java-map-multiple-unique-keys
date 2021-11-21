@@ -10,9 +10,6 @@ public class MultiUniquenessInCollectionsDemo
 	// The ERP Stock information
 	static boolean IN_STOCK = true;
 	static boolean OUT_OF_STOCK = false;
-
-	public static final String RED_BRIGHT = "\033[0;91m";    // RED
-	public static final String RESET = "\033[0m";  // Text Reset
 	
 	public static void main(String args[])
 	{
