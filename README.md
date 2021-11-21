@@ -39,6 +39,11 @@ Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android 
 |Samsung Galaxy| Mobiles| Android Mobile| 201.98| true
 
 # Implementation
+- We start by building a Map data structure.
+  - Map<ProductKey, ProductInfo> productCatalog = new HashMap<ProductKey, ProductInfo>();
+  - The ProductKey is an encapsulation for ProductName and ProductCategory as they together are going to be unique.
+  - Because our Key in the Map is two attributes, we override hashCode and equals methods as shown below, **to include these two attributes** in the method computation.
+  - The ProductInfo is the encapsulation for other attributes.
 - Overriding equals
   - Plugin the two attributes ProductName and ProductCategory in the comparision in the overridden equals method.  
 ```
