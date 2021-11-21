@@ -48,7 +48,7 @@ Encountered 2 duplicates keys.
   - Plugin the two attributes ProductName and ProductCategory in the comparision in the overridden equals method.  
 ```
 	@Override
-  public boolean equals(final Object otherObject) 
+        public boolean equals(final Object otherObject) 
 	{
         if (this == otherObject)
             return true;
@@ -64,20 +64,21 @@ Encountered 2 duplicates keys.
             return true;
         else
         	return false;
-    }
+        }
 ```
 - Overriding hashCode
   - Plugin the ProductName and ProductCategory in the hashCode generation process.
 ```
 	@Override
-    public int hashCode() {
+        public int hashCode() 
+	{
         final int prime = 31;
         int result = 1;
         result = prime * result
                 + ((productName == null) ? 0 : productName.hashCode())
                 + + ((productCategory == null) ? 0 : productCategory.hashCode());
-        return result;
-    }
+            return result;
+        }
 ```
 
 - Main thing to note is that what ever properties we are going to make as keys in our Collections, we add them to the **hashCode** and **equals** method.
