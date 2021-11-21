@@ -1,24 +1,28 @@
 # java-map-multiple-unique-keys
 This is an example of a scenario where a map is used with a key that is made up of multiple attributes. All Java Collections rely on hashCode and equals methods to look up where a certain object is held in the collection or to know where to map a certain object into the collection. So overriding one of them would also need to override the other one as well. This is covered in Effective Java by Joshua Bloch(Item 10 and Item 11). A summary is also present in this stack overflow post https://stackoverflow.com/a/2265637/815961
 
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
 # Sample Input of the Program
-```
-{
-	Product Name: PS4	Product Category: Gaming Console	Product Description: Sony Entertainment	Product Price: 1200.0	Product Availability: true
-	Product Name: Dell Workstation	Product Category: Laptop	Product Description: Windows Laptops	Product Price: 654.87	Product Availability: true
-	Product Name: PS5	Product Category: Gaming Console	Product Description: Sony Entertainment	Product Price: 2400.0	Product Availability: true
-	Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 5 Inch	Product Price: 2050.0	Product Availability: true
-        Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 7 Inch	Product Price: 2050.0	Product Availability: true
-        Product Name: PoloShirts	Product Category: Shirts	Product Description: Round collared	Product Price: 10.76	Product Availability: true
-        Product Name: Nokia Lumia	Product Category: Mobiles	Product Description: Windows Mobile	Product Price: 108.67	Product Availability: false
-        Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria I	Product Price: 317.87	Product Availability: false
-        Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria II	Product Price: 317.87	Product Availability: false
-	Product Name: TurtleNecks	Product Category: Shirts	Product Description: Turtle collared	Product Price: 10.89	Product Availability: true
-	Product Name: Apple MacBook	Product Category: Laptop	Product Description: Mac Laptops	Product Price: 1191.23	Product Availability: true
-	Product Name: Samsung Galaxy	Product Category: Mobiles	Product Description: Android Mobile	Product Price: 201.98	Product Availability: true
-}
-```
-- Notice the last two entries in the input having the same Product Name and Product Category.
+|Product Name|Product Category|Product Description|Product Price|Product Availability
+|-----|-----|-----|-----|-----|
+|PS4|Gaming Console| Sony Entertainment|1200.0|true
+|Dell Workstation| Laptop| Windows Laptops| 654.87| true
+|PS5| Gaming Console| Sony Entertainment| 2400.0| true
+|Samsung Galaxy| Tab| Android Tablet 5 Inch| 2050.0| true
+|Samsung Galaxy| Tab| Android Tablet 7 Inch| 2050.0| true
+|PoloShirts| Shirts| Round collared| 10.76| true
+|Nokia Lumia| Mobiles| Windows Mobile| 108.67| false
+|Witcher| Game| Adventures of Geralt of Reveria I| 317.87| false
+|Witcher| Game| Adventures of Geralt of Reveria II| 317.87| false
+|TurtleNecks| Shirts| Turtle collared| 10.89| true
+|Apple MacBook| Laptop| Mac Laptops| 1191.23| true
+|Samsung Galaxy| Mobiles| Android Mobile| 201.98| true
+
+- Notice the below two entries in the input having the same Product Name and Product Category.
 ```
 Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria I	Product Price: 317.87	Product Availability: false
 Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 5 Inch	Product Price: 2050.0	Product Availability: true
@@ -26,22 +30,18 @@ Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android 
 - This will be treated as a duplicate by our Map implementation.
 
 # Sample Output of the Program
-```
-Encountered 2 duplicates keys.
-
-{
-	Product Name: PS4	Product Category: Gaming Console	Product Description: Sony Entertainment	Product Price: 1200.0	Product Availability: true
-	Product Name: Dell Workstation	Product Category: Laptop	Product Description: Windows Laptops	Product Price: 654.87	Product Availability: true
-	Product Name: PS5	Product Category: Gaming Console	Product Description: Sony Entertainment	Product Price: 2400.0	Product Availability: true
-	Product Name: Samsung Galaxy	Product Category: Tab	Product Description: Android Tablet 7 Inch	Product Price: 2050.0	Product Availability: true
-	Product Name: PoloShirts	Product Category: Shirts	Product Description: Round collared	Product Price: 10.76	Product Availability: true
-	Product Name: Nokia Lumia	Product Category: Mobiles	Product Description: Windows Mobile	Product Price: 108.67	Product Availability: false
-	Product Name: Witcher	Product Category: Game	Product Description: Adventures of Geralt of Reveria II	Product Price: 317.87	Product Availability: false
-	Product Name: TurtleNecks	Product Category: Shirts	Product Description: Turtle collared	Product Price: 10.89	Product Availability: true
-	Product Name: Apple MacBook	Product Category: Laptop	Product Description: Mac Laptops	Product Price: 1191.23	Product Availability: true
-	Product Name: Samsung Galaxy	Product Category: Mobiles	Product Description: Android Mobile	Product Price: 201.98	Product Availability: true
-}
-```
+|Product Name|Product Category|Product Description|Product Price|Product Availability
+|-----|-----|-----|-----|-----|
+|PS4|Gaming Console| Sony Entertainment|1200.0|true
+|Dell Workstation| Laptop| Windows Laptops| 654.87| true
+|PS5| Gaming Console| Sony Entertainment| 2400.0| true
+|Samsung Galaxy| Tab| Android Tablet 7 Inch| 2050.0| true
+|PoloShirts| Shirts| Round collared| 10.76| true
+|Nokia Lumia| Mobiles| Windows Mobile| 108.67| false
+|Witcher| Game| Adventures of Geralt of Reveria II| 317.87| false
+|TurtleNecks| Shirts| Turtle collared| 10.89| true
+|Apple MacBook| Laptop| Mac Laptops| 1191.23| true
+|Samsung Galaxy| Mobiles| Android Mobile| 201.98| true
 
 # Implementation
 - Overriding equals
